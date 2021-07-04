@@ -1,24 +1,55 @@
 <template>
-  <div v-if="this.type===Circle">
-    <div class="circle"></div>
   <div>
+    <div class="ct" v-if="animation === 'Dots'">
+      <div class="dots" />
+    </div>
+    <div class="ct" v-else-if="animation === 'Circle'">
+      <div class="circle"></div>
+    </div>
+    <div class="ct" v-else-if="animation === 'BouncingBars'">
+      <div class="bouncing_bar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="ct" v-else-if="animation === 'SpinnerDots'">
+      <div class="spinner_dots" />
+    </div>
+    <div class="ct" v-else-if="animation === 'Focus'">
+      <div class="focus" />
+    </div>
+    <div class="ct" v-else-if="animation === 'TwinCircles'">
+      <div class="twin_circles" />
+    </div>
+    <div class="ct" v-else-if="animation === 'Wave'">
+      <div class="wave" />
+    </div>
+    <div class="ct" v-else>
+      <div class="wave" />
+    </div>
+  </div>
 </template>
 
 <script>
 export default /*#__PURE__*/ {
   name: "VueCssLoader", // vue component name
   props: {
-    type: String,
+    animation: String,
     defaultValue: "Circle",
   },
 };
 </script>
 
 <style scoped>
- 
-
+.ct {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
 .box {
-  
   width: calc(25% - 12px);
   height: 10%;
   background-color: #fff;
@@ -31,6 +62,8 @@ export default /*#__PURE__*/ {
 }
 
 .dots {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   position: relative;
   width: 16px;
   height: 16px;
@@ -136,6 +169,8 @@ export default /*#__PURE__*/ {
   }
 }
 .twin_circles {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   position: relative;
 }
 .twin_circles:before,
@@ -214,6 +249,8 @@ export default /*#__PURE__*/ {
   }
 }
 .wave {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -287,8 +324,8 @@ export default /*#__PURE__*/ {
 .circle {
   --icon-color: rgb(2, 90, 108);
   --icon-color-lighten: rgba(2, 90, 108, 0.25);
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border: 6px var(--icon-color-lighten) solid;
   border-top: 6px var(--icon-color) solid;
   border-radius: 50%;
@@ -314,6 +351,8 @@ export default /*#__PURE__*/ {
   }
 }
 .focus {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   position: relative;
   width: 50px;
   height: 50px;
@@ -351,11 +390,15 @@ export default /*#__PURE__*/ {
   }
 }
 .bouncing_bar {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   display: flex;
   /* align-items: center; */
 }
 
 .line {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   height: 20px;
   width: 4px;
   background: var(--icon-color);
@@ -405,6 +448,8 @@ export default /*#__PURE__*/ {
   }
 }
 .spinner_dots {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   position: relative;
   width: 16px;
   height: 16px;
@@ -457,6 +502,8 @@ export default /*#__PURE__*/ {
   }
 }
 .fading_lines {
+  --icon-color: rgb(2, 90, 108);
+  --icon-color-lighten: rgba(2, 90, 108, 0.25);
   position: relative;
   background: var(--icon-color);
   width: 4px;

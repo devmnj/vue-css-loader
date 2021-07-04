@@ -15,7 +15,7 @@ npm install --save @codehat/vue-css-loader
 ```
 <template>
   <div class="home">
-    <vue-css-loader/>
+    <vue-css-loader animation="TwinCircles"/>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
 
 ## Props
 
-Using the `type prop` you can activate the following loaders.
+`animation props` allow us to use the following CSS animations.
 
 <img src='./loaderss.png'/>
 - Circles
@@ -42,7 +42,6 @@ Using the `type prop` you can activate the following loaders.
 - TwinCircles
 - SpinnerDots
 - Focus
-
 
 ## License
 

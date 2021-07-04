@@ -1,17 +1,23 @@
 <script>
-import Vue from 'vue';
-import VueCssLoader from '@/vue-css-loader.vue';
+import Vue from "vue";
+import VueCssLoader from "@/vue-css-loader.vue";
 
 export default Vue.extend({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    VueCssLoader
-  }
+    VueCssLoader,
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <vue-css-loader />
+    <vue-css-loader animation="Dots" />
+    <vue-css-loader animation="Circle" />
+    <vue-css-loader animation="BouncingBars" />
+     <vue-css-loader animation="Wave" />
+   <vue-css-loader animation="TwinCircles" />
+     <vue-css-loader animation="SpinnerDots" />
+      
   </div>
 </template>
