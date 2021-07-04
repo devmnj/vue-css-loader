@@ -35,6 +35,7 @@ export default {
 `animation props` allow us to use the following CSS animations.
 
 <img src='./loaderss.png'/>
+
 - Circles
 - BouncingBar
 - Wave
