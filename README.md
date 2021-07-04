@@ -1,6 +1,6 @@
 # @codehat/vue-css-loader
 
-> CSS Loader component for `Vuejs` which includes 7 loaders. The CSS works were adapted from CodePen artists
+> CSS Loader component for `Vuejs` which includes 7 CSS loading animations. The CSS works were adapted from CodePen artists
 
 ## Install
 
