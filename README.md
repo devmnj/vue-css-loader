@@ -2,6 +2,8 @@
 
 > CSS Loader component for `Vuejs` which includes 7 CSS loading animations. The CSS works were adapted from CodePen artists
 
+[![NPM](https://img.shields.io/npm/v/@codehat/vue-css-loader.svg)](https://www.npmjs.com/package/@codehat/vue-css-loader) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Install
 
 ```bash
