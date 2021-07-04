@@ -1,7 +1,7 @@
 {
   "name": "@codehat/vue-css-loader",
-  "version": "0.1.0",
-  "description": "Vue CSS Loader component",
+  "version": "0.1.1",
+  "description": "Vue CSS Loader animation component",
   "author": "manojap",
   "license": "MIT",
   "repository": "manojap/vue-css-loader",
@@ -17,7 +17,6 @@
   "sideEffects": false,
 
   "scripts": {
-    "deploy": "gh-pages -d example/build",
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
@@ -40,7 +39,6 @@
     "@vue/cli-service": "^4.5.10",
     "cross-env": "^7.0.3",
     "minimist": "^1.2.5",
-    "gh-pages": "^2.2.0",
     "rollup": "^2.36.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-vue": "^5.1.9",
