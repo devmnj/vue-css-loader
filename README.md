@@ -34,6 +34,7 @@ export default {
 
 Using the `type prop` you can activate the following loaders.
 
+<img src='./loaderss.png'/>
 - Circles
 - BouncingBar
 - Wave
@@ -41,6 +42,7 @@ Using the `type prop` you can activate the following loaders.
 - TwinCircles
 - SpinnerDots
 - Focus
+
 
 ## License
 

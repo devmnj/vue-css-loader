@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div v-if="this.type===Circle">
     <div class="circle"></div>
-  </div>
+  <div>
 </template>
 
 <script>
