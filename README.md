@@ -8,6 +8,8 @@
 
 ```bash
 npm install --save @codehat/vue-css-loader
+or
+npm install --save @manojap/vue-css-loader
 ```
 
 ## Usage
