@@ -1,15 +1,18 @@
 {
-  "name": "@codehat/vue-css-loader",
-  "version": "0.1.2",
+  "name": "@manojap/vue-css-loader",
+  "version": "0.1.4",
   "description": "Vue CSS Loader animation component",
   "author": "manojap",
   "license": "MIT",
-  "repository": "manojap/vue-css-loader",
+  "repository": {
+    "url": "git://github.com/manojap/vue-css-loader.git"
+  },
   "main": "dist/vue-css-loader.ssr.js",
   "browser": "dist/vue-css-loader.esm.js",
   "module": "dist/vue-css-loader.esm.js",
   "unpkg": "dist/vue-css-loader.min.js",
-
+  "keywords": [ "css-loading-animation","vue-animation",
+  "loading-animation"],
   "files": [
     "dist/*",
     "src/**/*.vue"
