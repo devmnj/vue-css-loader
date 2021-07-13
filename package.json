@@ -11,14 +11,16 @@
   "browser": "dist/vue-css-loader.esm.js",
   "module": "dist/vue-css-loader.esm.js",
   "unpkg": "dist/vue-css-loader.min.js",
-  "keywords": [ "css-loading-animation","vue-animation",
-  "loading-animation"],
+  "keywords": [
+    "css-loading-animation",
+    "vue-animation",
+    "loading-animation"
+  ],
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -26,10 +28,9 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
   "dependencies": {
+    "@manojap/vue-css-loader": "^0.1.1"
   },
-
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

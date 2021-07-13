@@ -7,14 +7,12 @@
 ## Install
 
 ```bash
-npm install --save @codehat/vue-css-loader
-or
-npm install --save @manojap/vue-css-loader
+npm install --save @codehat/vue-css-loade
 ```
 
 ## Usage
 
-```
+```javascript
 <template>
   <div class="home">
     <vue-css-loader animation="TwinCircles"/>
@@ -29,7 +27,8 @@ export default {
   components: {
     VueCssLoader
   },
-
+};
+</script>
 ```
 
 ## Props
